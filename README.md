@@ -1,10 +1,11 @@
-# Extralite Korea
+# Extralite · Rubi Workshop
 
 extralite.rubiworkshop.com 원페이지 정적 사이트. quoc.rubiworkshop.com · whiteind.rubiworkshop.com과 같은 구조와 디자인(레이아웃, 서체, 빌드 방식)입니다.
 
+- 사이트 표기: 운영 주체는 "루비워크샵"(사이트 이름, og:site_name, 구조화 데이터, 헤더, 저작권 표기). "익스트라라이트 코리아"라는 표현은 쓰지 않습니다.
 - `index.html` 한국어 원페이지 (Extralite · Range · Cockpit · Hubs · Wheels · Brompton · Drivetrain · Fit · Story · Showroom)
 - 디자인은 rubi.kr 체계: 영문 Pretendard · 한글 에스코어 드림, 웨이트 400, 흑백과 얇은 라인, 각진 버튼, 라이트/다크 자동. 일본어 페이지는 빌드 시 Noto Sans JP로 바뀝니다.
-- 공식 로고 이미지는 깃털과 글자가 겹쳐 단색 처리가 어려워, 헤더 로고는 글자 워드마크(Extralite Korea)로 씁니다. 단색 SVG 로고를 받으면 `.logo` 안을 이미지로 바꾸면 됩니다.
+- 공식 로고 이미지는 깃털과 글자가 겹쳐 단색 처리가 어려워, 헤더 로고는 글자 워드마크(Extralite + Rubi Workshop)로 씁니다. 단색 SVG 로고를 받으면 `.logo` 안을 이미지로 바꾸면 됩니다.
 - 제품 사진은 배경이 흰색~옅은 회색으로 제각각이라 4:3 옅은 회색 무대에 `mix-blend-mode:multiply`로 얹습니다. 라이프스타일 사진은 3:2, 세로 사진은 4:5(`tall`). 포인트 컬러는 퍼플(#6a3fa0)로 포커스 표시에만 씁니다.
 - 자바스크립트가 꺼져 있어도 본문이 보이도록 등장 모션은 `html.js`일 때만 적용합니다.
 - `index.src.html` 편집용 한국어 원본. 규격 표는 `{{HUB_TABLE}}`, `{{STEM_TABLE}}`, `{{WHEEL_TABLE}}` 자리에 빌드 시 채워집니다 (`tools/build.py` 안의 HUBS, STEMS, WHEELS).
